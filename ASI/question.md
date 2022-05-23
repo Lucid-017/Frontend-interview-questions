@@ -1,0 +1,1 @@
+## ASI or automatic semi colon injection
