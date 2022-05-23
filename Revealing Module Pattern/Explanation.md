@@ -1,0 +1,1 @@
+# QUESTION:how can we take an object literal that has a property called "data" and three methods called "render","add","remove" and rewrite it as a REVEALING MODULE PATTERN and only the "render" method can be accessed from outside
