@@ -21,3 +21,26 @@ var are either globally scoped or scoped inside of its function
 while let are scoped inside of curly braces*/ 
 // f2()
 
+// solution
+function f3() {
+    for (let i = 0; i < 3; i++) {//let scope starts here
+        setTimeout(function () {
+             console.log(i)
+        }, 1000 * i);
+    }//let scope ends here
+    //the variable i now no longer exist
+    // console.log(i) throws an error
+}
+// f3()
+
+// solution two using var
+function f4() {
+    for (var i = 0; i < 3; i++) {
+        setTimeout((function (i) {//by adding parenthesses around the function,it then becomes a sort of self contained expression
+            console.log(i)
+        }).bind(this,i), 1000 * i);//then Bind the
+        // bind takes in two arguemnts,the object you want to bind to adn the object to be binded 
+    }
+}
+// we pass in an arg "x" that is binded to the "i" variable and then print it to the console
+f4()
