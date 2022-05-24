@@ -1,0 +1,1 @@
+## can u build an example of a javascript singleton ( which is simply and object that anytime you try to get an instance of it,you get reference to the same instance and if it doesnt exist, it creates a new one)
