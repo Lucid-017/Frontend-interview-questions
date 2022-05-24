@@ -36,9 +36,9 @@ function f3() {
 // solution two using var
 function f4() {
     for (var i = 0; i < 3; i++) {
-        setTimeout((function (i) {//by adding parenthesses around the function,it then becomes a sort of self contained expression
-            console.log(i)
-        }).bind(this,i), 1000 * i);//then Bind the
+        setTimeout((function (x) {//by adding parenthesses around the function,it then becomes a sort of self contained expression
+            console.log(x)
+        }).bind(this,i), 1000 * i);//then Bind the x to the i variable
         // bind takes in two arguemnts,the object you want to bind to adn the object to be binded 
     }
 }
