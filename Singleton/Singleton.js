@@ -14,7 +14,13 @@ let obj = (function () {
 
     }
     return {
-     
+        getInstance:function(){
+            // check if the object instance exist
+            if(!objInstance){
+                objInstance=create()
+            }
+            return objInstance;
+        }
     };
 })();
 
