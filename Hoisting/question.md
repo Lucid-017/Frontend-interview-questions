@@ -1,0 +1,1 @@
+##  running this starter code,whats the output of the two console.log statements going to be and why?
