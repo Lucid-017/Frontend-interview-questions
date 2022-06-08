@@ -1,6 +1,9 @@
 var log = console.log
 function boxesPacking(length, width, height) {
-    
+    // inside each box contains not more than 1 box
+    // boxes inside its containing box all have length, width and height 
+    // a box can be put into another box only if all sides of the first ones are less than the respective one of the second one
+    // so we have to iterate between all possible comibinations of the length,width,height.length against each other
     var isPosible = true;
     for (var i = 0; i < length.length; i++) {
         log(length[i] + 'i')
