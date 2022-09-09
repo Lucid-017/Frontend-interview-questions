@@ -1,1 +1,1 @@
-## Write a function to dtermine if the supplied string or set of strings is a palindrome
+## Write a function to determine if the supplied string or set of strings is a palindrome

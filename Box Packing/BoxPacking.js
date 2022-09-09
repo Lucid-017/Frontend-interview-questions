@@ -12,8 +12,7 @@ function boxesPacking(length, width, height) {
         if (i === j) {
           continue;
         }
-        if (
-          !(
+        if (!(
             (length[i] < length[j] &&
               width[i] < width[j] &&
               height[i] < height[j]) ||

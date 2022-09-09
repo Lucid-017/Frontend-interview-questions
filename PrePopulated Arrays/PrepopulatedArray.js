@@ -11,7 +11,7 @@ let a1 =Array.from({length:5},n=>Math.floor( 5 * Math.random()))
 console.log('1', a1);
 
 //version 2 alternative
-let a2 = new Array(5).fill(2).map(n=> n*  Math.floor( 5 * Math.random()))
+let a2 = new Array(5).fill(1).map(n=> n*  Math.floor( 5 * Math.random()))
 console.log('2', a2);
 // new Array(5) creates a new array and takes in the length of the array
 // then .fill()this takes in whatever you want to fill the array with
